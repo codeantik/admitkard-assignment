@@ -18,6 +18,8 @@
     cd to /client
 
     `npm install` to install all dependencies
+    
+    fix the baseUrl in App.js file(removed deployed link) before starting the app
 
-    `npm start` to start the server
+    `npm start` to start the app
 
