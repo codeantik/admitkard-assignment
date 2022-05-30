@@ -1,0 +1,37 @@
+
+###
+GET http://localhost:5000
+
+###
+GET http://localhost:5000/users/all
+
+###
+GET http://localhost:5000/users/ankitsikitsafsdfasdfain888000@gmail.com
+
+
+###
+POST http://localhost:5000/user/create
+Content-Type: application/json
+
+{
+    "name": "notaldfjal",
+    "email": "blang@gmail.com",
+    "contactNumber": 5678933353,
+    "courseLevel": "PG",
+    "countryPreferences": "Germany",
+    "dateOfBirth": "01/01/2000"
+}
+
+###
+PUT http://localhost:5000/user/update
+Content-Type: application/json
+
+{
+    "name": "test1df",
+    "email": "test@gmail.com",
+    "contactNumber": 7777777778,
+    "courseLevel": "PG",
+    "countryPreferences": "UK",
+    "dateOfBirth": "01/01/1990"
+}
+

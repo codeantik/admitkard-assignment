@@ -1,0 +1,25 @@
+
+.about {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    font-size: 22px;
+    font-weight: 600;
+    width: 60%;
+    background-color: #fafafa;
+}
+
+@media screen and (max-width: 600px) {
+    .about-content {
+        width: 90%;
+    }
+}
