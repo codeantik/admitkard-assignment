@@ -3,7 +3,7 @@
 
 # Clone the repository
 
-    git clone 
+    git clone https://github.com/codeantik/admitkard-assignment.git
 
 # To start the server:
 
