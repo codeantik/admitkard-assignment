@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import axios from 'axios';
 import * as yup from 'yup';
 import { toast } from 'react-toastify';
+import { config } from '../../App';
 
 
 const schema = yup.object().shape({
@@ -41,7 +42,7 @@ const Form = () => {
     const checkUser = async (user) => {
         console.log(user.email);
         try {
-            const response = await axios.get(`http://localhost:5000/users/${user.email}`);
+            const response = await axios.get(`${config.baseUrl}/users/${user.email}`);
             const data = response.data;
             console.log('checkUser', data.length);
             if(data.length > 0) {
@@ -62,7 +63,7 @@ const Form = () => {
     const createUser = async (user) => {
         console.log(user);
         try {
-            const response = await axios.post(`http://localhost:5000/user/create`, user);
+            const response = await axios.post(`${config.baseUrl}/user/create`, user);
             const data = response.data
             console.log('create user', data);
             toast.success('User created successfully');
@@ -76,7 +77,7 @@ const Form = () => {
     const updateUser = async (user) => {
         console.log(user);
         try {
-            const response = await axios.put(`http://localhost:5000/user/update`, user);
+            const response = await axios.put(`${config.baseUrl}/user/update`, user);
             const data = response.data
             console.log('update user', data);
             toast.success('User updated successfully');

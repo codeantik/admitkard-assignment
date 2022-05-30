@@ -2,6 +2,7 @@ import './styles.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import { config } from '../../App';
 
 const Home = () => {
     const [searchEmail, setSearchEmail] = useState('');
@@ -9,7 +10,7 @@ const Home = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/users/${searchEmail}`);
+            const response = await axios.get(`${config.baseUrl}/users/${searchEmail}`);
             console.log(response.data);
             setUsers(response.data);
         }
@@ -20,7 +21,7 @@ const Home = () => {
 
     const getUsers = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/users/all`);
+            const response = await axios.get(`${config.baseUrl}/users/all`);
             console.log(response.data);
             setUsers(response.data.users);
             toast.success('Users fetched successfully');
@@ -32,6 +33,7 @@ const Home = () => {
     }
 
     useEffect(() => {
+        console.log(config)
         getUsers()
     }, []);
 

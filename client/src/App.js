@@ -1,4 +1,3 @@
-
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/home';
 import Form from './components/form';
@@ -7,6 +6,11 @@ import Nav from './components/nav';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+
+
+export const config = {
+    baseUrl: 'http://localhost:5000'
+}
 
 const App = () => {
     return (
