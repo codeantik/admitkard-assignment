@@ -8,8 +8,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 
+const deployedLink = 'https://admitkard-assignment-codeantik.vercel.app'
+const localLink = 'http://localhost:5000'
+
 export const config = {
-    baseUrl: 'http://localhost:5000'
+    baseUrl: deployedLink
 }
 
 const App = () => {
