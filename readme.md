@@ -10,9 +10,9 @@
 
     `npm start` to start the server
 
-# To start the client, run:
+# To start the client:
 
-    cd to /client && npm start
+    cd to /client
 
     `npm install` to install all dependencies
 
