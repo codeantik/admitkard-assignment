@@ -19,7 +19,7 @@
 
     `npm install` to install all dependencies
     
-    fix the baseUrl in App.js file(removed deployed link) before starting the app
+    fix the baseUrl in App.js file(remove deployed link) before starting the app
 
     `npm start` to start the app
 
