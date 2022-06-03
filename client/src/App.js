@@ -12,7 +12,7 @@ const deployedLink = 'https://admitkard-assignment-codeantik.vercel.app';
 const localLink = 'http://localhost:5000';
 
 export const config = {
-    baseUrl: deployedLink
+    baseUrl: localLink
 }
 
 const App = () => {
