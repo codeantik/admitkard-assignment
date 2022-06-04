@@ -19,17 +19,18 @@ mongoose
 
 // middleware
 
-app.use(cors({
-    origin: "*",
-}));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 
 // routes
 
 app.use('/', allRoutes);
+
+
+// listen
 
 app.listen(PORT, () => {
     console.log(`server running on http://localhost:${PORT}`)
