@@ -1,14 +1,17 @@
 {
   "name": "admitkard-assignment",
   "version": "1.0.0",
-  "description": "",
+  "description": "Assignment for admitkard",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "codeantik",
   "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
